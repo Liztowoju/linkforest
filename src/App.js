@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
+import avatar from './images/avatar-3.jpg';
+import shareIcon from './images/shareIcon.svg';
 import './App.css';
 
+
 function App() {
+  const [links, setLinks] = useState([
+    { name: 'Zuri Link', url: 'https://google.com' }
+  ]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app">
+      <header className="app-header">
+        <img src={avatar} className="app-logo rounded-circle" alt="logo" />
+        <p className='app-profile-name'>
+          Elizabeth Towoju
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={shareIcon} className="app-share-link" />
       </header>
+
+      <main>
+      </main>
     </div>
   );
 }
