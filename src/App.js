@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Link from './Link';
 import avatar from './images/avatar-3.jpg';
 import shareIcon from './images/shareIcon.svg';
 import './App.css';
@@ -31,9 +31,7 @@ function App() {
         <div className='container col-xxl-8'>
           <div className="app-links  list-group">
             {links.map((item, i) => (
-              <a href="#" className="app-link" aria-current="true" key={i}>
-                {item.name}
-              </a>
+              <Link link={item} index={i} />
             ))}
           </div>
         </div>
