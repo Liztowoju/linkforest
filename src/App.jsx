@@ -13,7 +13,6 @@ import "./App.css";
 
 function App() {
   const [links, setLinks] = useState([
-    // { name: "Twitter Link", url: "https://training.zuri.team/", id: "btn__zuri" },
     {
       name: "Zuri Team - global network of highly intelligent workforce",
       url: "https://training.zuri.team/",
