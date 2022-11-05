@@ -46,10 +46,74 @@ export default function Home() {
 
   return (
     <>
-      <form action="">
-        <header>
-          <h1>Contact Form</h1>
-        </header>
+      <header className="app-header contact">
+        <h1>Contact Form</h1>
+        <p>Hi there, contact me to ask me about anything you have in mind.</p>
+      </header>
+      <form action="" className="mb-5">
+        <div className="row g-3">
+          <div className="col-md-6">
+            <label htmlFor="formGroupExampleInput" className="form-label">
+              First name
+            </label>
+
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter your first name"
+              aria-label="First name"
+            />
+          </div>
+          <div className="col-md-6">
+            <label htmlFor="formGroupExampleInput" className="form-label">
+              Last Name
+            </label>
+
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter your last name"
+              aria-label="Last name"
+            />
+          </div>
+
+          <div className="col-12">
+            <label htmlFor="formGroupExampleInput" className="form-label">
+              Email
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="formGroupExampleInput"
+              placeholder="yourname@email.com"
+            />
+          </div>
+
+          <div className="col-12">
+            <label htmlFor="exampleFormControlTextarea1" className="form-label">
+              Message
+            </label>
+            <textarea
+              className="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div className="col-12 form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label className="form-check-label" htmlFor="flexCheckDefault">
+              You agree to providing your data to name who may contact you
+            </label>
+          </div>
+
+          <button className="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
+        </div>
       </form>
     </>
   );
