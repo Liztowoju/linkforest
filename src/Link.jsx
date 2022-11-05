@@ -5,7 +5,6 @@ export default function Link(props) {
       id={props.link.id}
       title={props.link.title}
       className="app-link"
-      target="_blank"
       aria-current="true"
       key={props.index}
     >
