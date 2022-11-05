@@ -78,6 +78,10 @@ body{
   cursor: pointer;
 }
 
+.app-share-link img {
+  width: 16px;
+}
+
 .app-links>*+* {
   margin-top: 1rem;
 }
@@ -92,6 +96,7 @@ body{
   transition: 0.2s transform ease-in-out;
   will-change: transform;
   position: relative;
+  text-align: center;
 }
 
 .app-link:hover {
@@ -109,6 +114,7 @@ body{
 
 .app-social-links {
   padding: 3rem;
+  text-align: center;
 }
 
 .app-social-links img {

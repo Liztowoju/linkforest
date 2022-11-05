@@ -66,15 +66,15 @@ export default function Home() {
             </div>
           </div>
 
-          <p id="twitter" className="app-profile-name">
+          <h3 id="twitter" className="app-profile-name text-center">
             @helizabethan
-          </p>
+          </h3>
           <p id="slack" className="app-profile-name d-none">
             helizabethan
           </p>
 
           <Tooltip text="Share link">
-            <a href="#0" className="app-share-link d-none d-md-block">
+            <a href="#0" className="app-share-link d-none d-md-flex justify-content-center">
               <img src={shareIcon} />
             </a>
           </Tooltip>
