@@ -53,24 +53,26 @@ export default function Home() {
       <form action="" className="mb-5">
         <div className="row g-3">
           <div className="col-md-6">
-            <label htmlFor="formGroupExampleInput" className="form-label">
+            <label htmlFor="first_name" className="form-label">
               First name
             </label>
 
             <input
               type="text"
+              id="first_name"
               className="form-control"
               placeholder="Enter your first name"
               aria-label="First name"
             />
           </div>
           <div className="col-md-6">
-            <label htmlFor="formGroupExampleInput" className="form-label">
+            <label htmlFor="last_name" className="form-label">
               Last Name
             </label>
 
             <input
               type="text"
+              id="last_name"
               className="form-control"
               placeholder="Enter your last name"
               aria-label="Last name"
@@ -78,24 +80,24 @@ export default function Home() {
           </div>
 
           <div className="col-12">
-            <label htmlFor="formGroupExampleInput" className="form-label">
+            <label htmlFor="email" className="form-label">
               Email
             </label>
             <input
               type="text"
+              id="email"
               className="form-control"
-              id="formGroupExampleInput"
               placeholder="yourname@email.com"
             />
           </div>
 
           <div className="col-12">
-            <label htmlFor="exampleFormControlTextarea1" className="form-label">
+            <label htmlFor="message" className="form-label">
               Message
             </label>
             <textarea
               className="form-control"
-              id="exampleFormControlTextarea1"
+              id="message"
               rows="3"
               placeholder="Send a message and I'll reply you as soon as possible..."
             ></textarea>
@@ -106,14 +108,14 @@ export default function Home() {
               className="form-check-input"
               type="checkbox"
               value=""
-              id="flexCheckDefault"
+              id="terms_and_conditions"
             />
-            <label className="form-check-label" htmlFor="flexCheckDefault">
+            <label className="form-check-label" htmlFor="terms_and_conditions">
               You agree to providing your data to name who may contact you
             </label>
           </div>
 
-          <button className="w-100 btn btn-primary" type="submit">Send Message</button>
+          <button id="btn__submit" className="w-100 btn btn-primary" type="submit">Send Message</button>
         </div>
       </form>
     </>
