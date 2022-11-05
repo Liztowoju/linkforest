@@ -1,5 +1,11 @@
 import { useState } from "react";
 import Link from "./Link";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link as RouterLink,
+} from "react-router-dom";
 import { Tooltip } from "./Tooltip";
 import avatar from "./images/avatar-3.jpg";
 import shareIcon from "./images/shareIcon.svg";
@@ -39,6 +45,12 @@ function App() {
       url: "https://books.zuri.team/design-rules",
       id: "book__design",
     },
+    {
+      name: "Contact Me",
+      url: "/contact",
+      display: "router-link",
+      id: "contact",
+    },
   ]);
 
   return (
@@ -53,7 +65,11 @@ function App() {
               alt="profile-image"
             />
             <div className="overlay rounded-circle">
-              <a href="#" class="app-profile-image-icon" title="User Profile">
+              <a
+                href="#"
+                className="app-profile-image-icon"
+                title="User Profile"
+              >
                 <img src={cameraIcon} alt="" />
               </a>
             </div>
@@ -83,9 +99,11 @@ function App() {
       <main>
         <div className="container col-xxl-8">
           <div className="app-links  list-group">
-            {links.map((item, i) => (
-              <Link link={item} index={i} />
-            ))}
+            <Router>
+              {links.map((item, i) =>
+                  <Link link={item} index={i} key={i} />
+              )}
+            </Router>
           </div>
         </div>
 
