@@ -97,6 +97,7 @@ export default function Home() {
               className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
+              placeholder="Send a message and I'll reply you as soon as possible..."
             ></textarea>
           </div>
 
@@ -112,7 +113,7 @@ export default function Home() {
             </label>
           </div>
 
-          <button className="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
+          <button className="w-100 btn btn-primary" type="submit">Send Message</button>
         </div>
       </form>
     </>
